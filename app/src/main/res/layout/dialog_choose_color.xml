@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <ImageButton
+            android:id="@+id/ibSmallBrash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/color1"
+            android:layout_marginStart="5dp"
+            android:onClick="paintClicked"
+            android:tag="@color/color1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UsingOnClickInXml" />
+
+        <ImageButton
+            android:id="@+id/ibSmall1Brash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/color2"
+            android:onClick="paintClicked"
+            android:tag="@color/color2"
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ibSmallBrash"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UsingOnClickInXml" />
+
+        <ImageButton
+            android:id="@+id/ibMediumBrash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/color3"
+            android:onClick="paintClicked"
+            android:tag="@color/color3"
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ibSmall1Brash"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UsingOnClickInXml" />
+
+        <ImageButton
+            android:id="@+id/ibMedium1Brash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/color4"
+            android:onClick="paintClicked"
+            android:tag="@color/color4"
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ibMediumBrash"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UsingOnClickInXml" />
+
+        <ImageButton
+            android:id="@+id/ibLargeBrash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/color5"
+            android:onClick="paintClicked"
+            android:tag="@color/color5"
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ibMedium1Brash"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UsingOnClickInXml" />
+
+        <ImageButton
+            android:id="@+id/ibLarge1Brash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/color6"
+            android:onClick="paintClicked"
+            android:tag="@color/color6"
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/ibLargeBrash"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UsingOnClickInXml" />
+
+        <ImageButton
+            android:id="@+id/ib1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/color1"
+            android:onClick="paintClicked"
+            android:tag="@color/color1"
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ibLarge1Brash"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <ImageButton
+            android:id="@+id/ib2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/color7"
+            android:onClick="paintClicked"
+            android:tag="@color/black"
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ib1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    </LinearLayout>
+
+
+
+
+</HorizontalScrollView>
